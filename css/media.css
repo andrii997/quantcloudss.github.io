@@ -1,0 +1,238 @@
+@media (max-width: 1200px) {
+	#what .box {
+		height: 380px;
+	}
+	#integrations .box {
+		height: 340px;
+	}
+}
+
+@media (max-width: 992px) {
+
+#header .logo-desc {
+	display: none;
+}
+#header .logo-768 {
+	display: block;
+}
+
+.header-links ul li {
+    margin-right: 40px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+#header .logo-desc {
+	display: none;
+}
+#header .logo-768 {
+	display: block;
+}
+
+.header-links ul li {
+	margin-right: 40px;
+}
+
+#banner .macbook-container img {
+	width: 100%;
+}
+
+#what {
+	padding-top: 250px;
+}
+
+#what h2 {
+	font-size: 26px;
+	line-height: 32px;
+}
+
+#what .box {
+	margin-bottom: 30px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.software-item_left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.software-item_left .box {
+	margin: 0 5px 30px;
+	flex: 1;
+	height: 220px;
+}
+
+.software-item .box {
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+#integrations {
+	text-align: center;
+}
+
+#integrations .title {
+	margin-bottom: 30px;
+}
+
+#integrations .btn {
+	margin-bottom: 30px;
+}
+
+#integrations .box {
+    height: 250px;
+}
+
+#footer .footer-logo img {
+	width: 100%;
+}
+
+#footer .footer-col a {
+	font-size: 14px;
+}
+
+#support .container-img {
+	margin: 0 20px 20px;
+}
+
+}
+
+
+@media (max-width: 480px) {
+#header {
+	display: none;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 0;
+}
+.subtitle {
+	font-size: 18px;
+}
+#banner .subtitle {
+	margin-bottom: 20px;
+}
+#banner {
+	max-height: 600px;
+}
+#banner .macbook-container {
+	top: 150px;
+}
+#what {
+	padding-top: 150px;
+}
+#what h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#what .title {
+    margin-bottom: 20px;
+}
+#what .box {
+	height: auto;
+}
+
+.btn-up {
+	bottom: 50px;
+	right: 30px;
+}
+
+#what .box {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.software-item .box {
+	text-align: center;
+}
+.software-item .box-img {
+	margin: 0 auto 10px;
+}
+
+.software-item .box-title, .software-item_left .box-title {
+	margin-bottom: 10px;
+}
+
+#integrations .title {
+	margin-bottom: 20px;
+}
+
+#integrations .box {
+	height: auto;
+	margin-bottom: 20px;
+}
+
+#integrations .box-title {
+	margin-bottom: 10px;
+}
+
+#footer .footer-logo img {
+	width: auto;
+}
+
+#footer .footer-logo {
+	margin-bottom: 20px;
+}
+
+#footer .footer-social {
+	margin-bottom: 30px;
+}
+
+#footer .title {
+	margin-bottom: 20px;
+}
+
+#footer .footer-col {
+    margin-bottom: 40px;
+}
+
+#contact-us input, #contact-us textarea {
+	margin-bottom: 20px;
+}
+
+.software-item_left {
+	flex-direction: column;
+}
+
+.software-item_left .box {
+	margin: 0 0 5px;
+	width: 100%;
+}
+
+#software .title {
+	margin-bottom: 20px;
+}
+
+#support .title {
+	margin-bottom: 20px;
+}
+
+#support .container-img {
+    margin: 0 20px 10px;
+}
+#what .box-img {
+	width: 75%;
+	margin: 0 auto;
+}
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
