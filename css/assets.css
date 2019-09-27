@@ -1,3 +1,7 @@
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
 * {
 	outline: none;
 }
@@ -80,7 +84,7 @@ p {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 20px;
 	color: #DFE2E5;
 }
 

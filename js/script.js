@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+
+	/*Header menu*/
+
+	$(".header-menu img").click(function(e){
+		e.preventDefault();
+		$("#menu").toggleClass("show");
+	});
+
+	$("#menu a").click(function(){
+
+		setTimeout(function() {
+			$(".header-menu img").click();
+		}, 200);
+		
+	});
+
+	$(document).on('click','.milk-shadow',function(){
+		$(".header-menu img").click();
+	});
+
 	/*feedback form*/
 
 	$('.popup-with-form').magnificPopup({
@@ -76,14 +96,41 @@ $(window).scroll(function (){
     });
 });
 
-$(window).scroll(function (){
-    $('#what').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+80) {
-            $('.btn-up').css('display', 'flex');
-        }else{
-			$('.btn-up').css('display', 'none');
-        }
-    });
+
+$("#software .box").click(function(e) {
+  e.preventDefault();
+  $("#software .box").removeClass('active');
+  $(this).addClass('active');
 });
+
+$("#software .box.software-1").click(function(e) {
+  $("#software .software-screen img").attr("src","img/software/screen-1.jpg");
+});
+$("#software .box.software-2").click(function(e) {
+  $("#software .software-screen img").attr("src","img/software/screen-2.jpg");
+});
+$("#software .box.software-3").click(function(e) {
+  $("#software .software-screen img").attr("src","img/software/screen-3.jpg");
+});
+
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('white-popup-block');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+

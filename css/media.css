@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
 	#what .box {
 		height: 380px;
+		margin-bottom: 30px;
 	}
 	#integrations .box {
 		height: 340px;
@@ -24,6 +25,15 @@
 
 @media (max-width: 768px) {
 
+#what .box {
+	height: auto;
+}
+
+#what .box-img {
+	width: 75%;
+	margin: 0 auto;
+}
+
 #header .logo-desc {
 	display: none;
 }
@@ -40,12 +50,16 @@
 }
 
 #what {
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 #what h2 {
-	font-size: 26px;
-	line-height: 32px;
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 60px;
+}
+#what .title {
+	margin-bottom: 40px;
 }
 
 #what .box {
@@ -86,12 +100,11 @@ section {
 }
 
 #integrations .box {
-    height: 250px;
+    height: auto;
+    text-align: left;
 }
 
-#footer .footer-logo img {
-	width: 100%;
-}
+
 
 #footer .footer-col a {
 	font-size: 14px;
@@ -101,13 +114,43 @@ section {
 	margin: 0 20px 20px;
 }
 
+#header {
+	padding: 10px 0!important;
+}
+.header-menu {
+	display: flex;
+}
+.header-links {
+	display: none;
+}
+
+.btn-expert {
+	display: none!important;
+}
+
+#support .title {
+	margin-bottom: 40px;
+}
+
+.software-item_left .box {
+	padding: 15px;
+	height: 180px;
+}
+
+.software-item_left .box-title {
+	font-size: 16px;
+}
+
+.software-item_left p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
 }
 
 
 @media (max-width: 480px) {
-#header {
-	display: none;
-}
+
 
 h1 {
 	font-size: 28px;
@@ -139,11 +182,6 @@ h1 {
 }
 #what .box {
 	height: auto;
-}
-
-.btn-up {
-	bottom: 50px;
-	right: 30px;
 }
 
 #what .box {
@@ -198,9 +236,7 @@ section {
     margin-bottom: 40px;
 }
 
-#contact-us input, #contact-us textarea {
-	margin-bottom: 20px;
-}
+
 
 .software-item_left {
 	flex-direction: column;
@@ -226,6 +262,14 @@ section {
 	width: 75%;
 	margin: 0 auto;
 }
+
+
+input+label[placeholder],
+#popup-talk select, #popup-demo select,
+#popup-talk textarea, #popup-demo textarea  {
+	margin-bottom: 20px;
+}
+
 
 }
 
