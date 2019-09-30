@@ -1,3 +1,19 @@
+@media (max-width: 1600px) {
+#banner:after {
+	-webkit-background-size: 70%;
+	background-size: 70%;
+}
+#banner .macbook-container {
+    top: 200px;
+}
+#what {
+	padding-top: 270px;
+}
+#banner .macbook-container img {
+    width: 750px;
+}
+}
+
 @media (max-width: 1200px) {
 	#what .box {
 		height: 380px;
@@ -5,6 +21,10 @@
 	}
 	#integrations .box {
 		height: 340px;
+	}
+	#banner:after {
+		-webkit-background-size: 75%;
+		background-size: 75%;
 	}
 }
 
@@ -24,7 +44,21 @@
 }
 
 @media (max-width: 768px) {
+	#banner:after {
+		-webkit-background-size: 90%;
+		background-size: 90%;
+		top: 100px;
+	}
+	#banner .macbook-container {
+	    top: 150px;
+	}
+	#banner {
 
+	    max-height: 700px;
+
+	    padding: 200px 0 100px;
+
+	}
 #what .box {
 	height: auto;
 }
@@ -50,7 +84,7 @@
 }
 
 #what {
-	padding-top: 200px;
+	padding-top: 180px;
 }
 
 #what h2 {
@@ -150,7 +184,15 @@ section {
 
 
 @media (max-width: 480px) {
+#banner:after {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    top: 150px;
+}
 
+#banner .macbook-container img {
+    width: 80%;
+}
 
 h1 {
 	font-size: 28px;
@@ -167,10 +209,10 @@ h1 {
 	max-height: 600px;
 }
 #banner .macbook-container {
-	top: 150px;
+	top: 120px;
 }
 #what {
-	padding-top: 150px;
+	padding-top: 80px;
 }
 #what h2 {
     font-size: 16px;

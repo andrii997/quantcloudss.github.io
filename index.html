@@ -33,10 +33,10 @@
       <div class="col-auto">
         <div class="header-links">
           <ul>
-            <li><a href="#what-title">Solutions</a></li>
-            <li><a href="#software">Features</a></li>
-            <li><a href="#integrations">Integrations</a></li>
-            <li><a href="#contact-us">Contacts</a></li>
+            <li><a href="#what-title" class="link-solutions">Solutions</a></li>
+            <li><a href="#software" class="link-features">Features</a></li>
+            <li><a href="#integrations" class="link-integrations">Integrations</a></li>
+            <li><a href="#contact-us" class="link-contacts">Contacts</a></li>
           </ul>
         </div>
 
@@ -125,7 +125,7 @@
       <div class="col-lg-4">
         <div class="software-item_left">
 
-          <div class="box software-1">
+          <div class="box active software-1">
             <div class="box-img">
               <img src="img/software/left-icon_1.png" alt="">
             </div>
@@ -133,7 +133,7 @@
             <p>Effective tracking performance of each bot and helicopter view</p>
           </div>
 
-          <div class="box active software-2">
+          <div class="box software-2">
             <div class="box-img">
               <img src="img/software/left-icon_2.png" alt="">
             </div>
@@ -479,7 +479,8 @@
        </div>
 
        <div class="col-lg-12">
-         <textarea placeholder="Your message" required></textarea>
+         <textarea required></textarea>
+         <label placeholder="Your message" class="label-textarea"></label>
        </div>
 
      </div>
@@ -507,8 +508,8 @@
         <div class="footer-col">
           <div class="title">Contact info</div>
 
-          <a href="mailto:info@quantcloud.com">info@quantcloud.com</a>
-          <a href="tel:+380977838890">+38 097 783 88 90</a>
+          <a href="mailto:info@quantcloud.com"><img src="img/mail.png" alt="mail">info@quantcloud.com</a>
+          <a href="tel:+380977838890"><img src="img/phone.png" alt="phone">+38 097 783 88 90</a>
 
         </div>
       </div>
@@ -834,7 +835,8 @@
     </div>
 
     <div class="col-lg-12">
-      <textarea placeholder="Your message" required></textarea>
+      <textarea required></textarea>
+      <label placeholder="Your message" class="label-textarea"></label>
     </div>
   </div>
 
@@ -842,7 +844,7 @@
 </form>
 
 <!-- Contact-me popup -->
-<form id="popup-demo" class="mfp-hide white-popup-block" method="POST" novalidate>
+<form id="popup-demo" class="mfp-hide white-popup-block" method="POST" action="mail.php" novalidate>
   <div class="title">Request demo</div>
 
   <div class="row popup-form">
@@ -860,6 +862,16 @@
   <button type="submit" class="btn">Send</button>
 </form>
 
+<!-- <a class="popup-modal" href="#popup-success">Open modal</a> -->
+
+<!-- success popup -->
+<div id="popup-success" class="mfp-hide white-popup-block">
+  <div class="title">Thank you for request</div>
+  <div class="subtitle">Check your email to get information</div>
+
+  <a class="popup-modal-dismiss btn" href="#">Ok</a>
+
+</div>
 
 <!-- Header menu -->
 <div class="menu" id="menu">

@@ -33,6 +33,19 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: index.html');
+?>
+    <script type='javasript'>
+    	$.magnificPopup.open({
+    	  items: {
+    	    src: '#popup-success'
+    	  },
+    	  type: 'inline',
+    	  preloader: false,
+    	  focus: '#username',
+    	  modal: true
+    	});
+    </script>
+<?php 
 }
 ?>
+
